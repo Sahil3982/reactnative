@@ -10,7 +10,7 @@ export default function HomeScreen() {
    
     <>
      <SafeAreaView>
-      <TextInput style={{styles.btn}} title='my-btn okjnb' placeholder-shown="ok">
+      <TextInput style={{styles.button}} title='my-btn okjnb' placeholder-shown="ok">
 
       </TextInput>
      </SafeAreaView>
@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 908,
   },
-  btn{
-font
+  button :{
+
   },
   stepContainer: {
     gap: 98,
