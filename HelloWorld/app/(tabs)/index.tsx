@@ -9,7 +9,7 @@ import {
   View,
 } from "react-native";
 import { useState } from "react";
-import { useNavigation } from "expo-router";
+import { Link, useNavigation } from "expo-router";
 import { HelloWave } from "@/components/HelloWave";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
@@ -67,6 +67,8 @@ export default function HomeScreen() {
           title="Login"
           color="green"
         />
+
+        <Link  href="/forget"><Text style={styles.for}>Forget Password</Text></Link>
       </View>
     </SafeAreaView>
   );
@@ -88,6 +90,11 @@ const styles = StyleSheet.create({
   },
   formContainer: {
     marginTop: 20,
+  },
+  for:{
+    marginTop : 80,
+    textAlign : 'right',
+    color : 'blue'
   },
   label: {
     fontSize: 18,
