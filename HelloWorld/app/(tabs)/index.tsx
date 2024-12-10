@@ -62,13 +62,11 @@ export default function HomeScreen() {
           secureTextEntry
         />
 
-        <Button
-          onPress={handleSubmit}
-          title="Login"
-          color="green"
-        />
+        <Button onPress={handleSubmit} title="Login" color="green" />
 
-        <Link  href="/forget"><Text style={styles.for}>Forget Password</Text></Link>
+        <Link href="/forget">
+          <Text style={styles.for}>Forget Password</Text>
+        </Link>
       </View>
     </SafeAreaView>
   );
@@ -91,10 +89,10 @@ const styles = StyleSheet.create({
   formContainer: {
     marginTop: 20,
   },
-  for:{
-    marginTop : 80,
-    textAlign : 'right',
-    color : 'blue'
+  for: {
+    marginTop: 80,
+    textAlign: "right",
+    color: "blue",
   },
   label: {
     fontSize: 18,
@@ -111,3 +109,5 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
+
+
