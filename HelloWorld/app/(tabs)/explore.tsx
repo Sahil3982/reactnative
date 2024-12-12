@@ -1,4 +1,4 @@
-import { Button, Image, ImageBackground, Modal, Pressable, SafeAreaView, ScrollView, StatusBar, Text, View } from "react-native";
+import { ActivityIndicator, Alert, Button, Image, ImageBackground, Modal, Pressable, SafeAreaView, ScrollView, StatusBar, Text, View } from "react-native";
 import images1 from '../../assets/images/images1.jpg'
 import { useState } from "react";
 const explore = () => {
@@ -10,7 +10,6 @@ const explore = () => {
       padding :8
     }}>
       <StatusBar backgroundColor="brown" ></StatusBar>
-
       <Modal visible={toggle}>
         <Text>hi</Text>
         <Button title="close" onPress={()=>{settoggle(false)
@@ -20,7 +19,11 @@ const explore = () => {
         padding : 4,
         flex :  1
       }}>
-       <Pressable onPress={()=>{
+        <Button  title="Alert 2" onPress={()=>{
+          Alert.alert("Hii",'Bye')
+        }}></Button>
+       <Pressable  onPress={()=>{
+        Alert.alert("kyu","glata")
         setfirst(first*2)
         settoggle(false)
         console.log(first);
@@ -40,6 +43,9 @@ const explore = () => {
           width={10}
           height={10}
         />
+        <ActivityIndicator ></ActivityIndicator>
+        
+
        </Pressable>
        <Text 
        style={{
