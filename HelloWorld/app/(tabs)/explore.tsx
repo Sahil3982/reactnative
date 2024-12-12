@@ -12,8 +12,8 @@ const explore = () => {
       <StatusBar backgroundColor="brown" ></StatusBar>
       <Modal visible={toggle}>
         <Text>hi</Text>
-        <Button title="close" onPress={()=>{settoggle(false)
-        }}>Close</Button>
+        {/* <Button title="close" onPress={()=>{settoggle(false)
+        }}>Close</Button> */}
       </Modal>
       <View style={{
         padding : 4,

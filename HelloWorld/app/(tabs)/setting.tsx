@@ -1,3 +1,4 @@
+import Greet from '@/components/Greet'
 import { SafeAreaView, Text, View } from 'react-native'
 
 const Setting = () => {
@@ -5,6 +6,11 @@ const Setting = () => {
     <SafeAreaView>
         <View>
         <Text>Setting</Text>
+        <Text>Setting</Text>
+        <Text>Setting</Text>
+        <Text>Setting</Text>
+        <Text>Setting</Text>
+        <Greet name="Sahil PAtel" />
         </View>
     </SafeAreaView>
   )
